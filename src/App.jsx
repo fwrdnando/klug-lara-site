@@ -1,10 +1,19 @@
-import { FaWhatsapp } from "react-icons/fa";
-import whatsappIcon from "./assets/whats.png";
-import instagramIcon from "./assets/instagram.png";
-import emailIcon from "./assets/email.png";
-import localizaIcon from "./assets/localiza.png";
 import { useEffect, useState } from "react";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+import {
+  faWhatsapp,
+  faInstagram
+} from "@fortawesome/free-brands-svg-icons";
+
+import {
+  faAt,
+  faMap
+} from "@fortawesome/free-solid-svg-icons";
+
 import "./App.css";
+
 import escri from "./assets/escri.jpeg";
 import luis1 from "./assets/luis1.jpeg";
 import luis2 from "./assets/luis2.jpeg";
@@ -14,6 +23,7 @@ import jami3 from "./assets/jami3.jpeg";
 import mari1 from "./assets/mari1.jpeg";
 import mari2 from "./assets/mari2.jpeg";
 import mari3 from "./assets/mari3.jpeg";
+
 import logoAzul from "./assets/logo_azul.png";
 import logoCinza from "./assets/logo_cinza.png";
 
@@ -48,51 +58,34 @@ function App() {
         </div>
       </nav>
 
-      <header className="hero">
-        <div className="hero-bg-glow" />
-        <div className="hero-content">
-          <img src={logoAzul} alt="Klug & Lara" className="hero-logo" />
-          <p>
-            Soluções jurídicas com atendimento personalizado,
-            atuação estratégica e compromisso com resultados.
-          </p>
-          <a
-  
->
- 
- 
-</a>
-        </div>
+<header className="hero">
 
-        <div className="hero-image">
-          <img src={escri} alt="Escritório Klug & Lara" />
-        </div>
-      </header>
+  <div className="hero-overlay"></div>
+
+  <div className="hero-content">
+    <img src={logoAzul} alt="Klug & Lara" className="hero-logo" />
+
+    <p>
+      Soluções jurídicas com atendimento personalizado,
+      atuação estratégica e compromisso com resultados.
+    </p>
+
+    <a
+      href="https://wa.me/5551992744008"
+      target="_blank"
+      rel="noreferrer"
+      className="btn-primary"
+    >
+      Fale conosco
+    </a>
+
+  </div>
+
+</header>
 
       <section id="sobre" className="section">
   <h2>Sobre o Escritório</h2>
-
-  <div className="about-highlights">
-    <div className="highlight-card">
-      <span>10+</span>
-      <p>Anos de Experiência</p>
-    </div>
-
-    <div className="highlight-card">
-      <span>✓</span>
-      <p>Atendimento Personalizado</p>
-    </div>
-
-    <div className="highlight-card">
-      <span>◈</span>
-      <p>Consultoria Online</p>
-    </div>
-
-    <div className="highlight-card">
-      <span>⚖</span>
-      <p>Excelência Jurídica</p>
-    </div>
-  </div>
+<div className="section-divider"></div>
 
   <div className="about-content">
           <p>
@@ -116,86 +109,158 @@ function App() {
             diversas áreas, visto que em sua maioria as matérias se entrelaçam.
           </p>
         </div>
-      </section>
 
-      <section id="areas" className="section">
-        <h2>Áreas de Atuação</h2>
-        <div className="cards">
-          <div className="card">
-            <h3>Assessoria Jurídica à Empresas</h3>
-            <p>Atendimento jurídico completo para empresas, com atuação preventiva e contenciosa.</p>
-          </div>
-          <div className="card">
-            <h3>Direito Contratual</h3>
-            <p>Elaboração, revisão e acompanhamento durante toda a negociação de contratos.</p>
-          </div>
-          <div className="card">
-            <h3>Direito de Família e Sucessões</h3>
-            <p>Divórcios, guarda, alimentos, inventários e planejamento sucessório.</p>
-          </div>
-          <div className="card">
-            <h3>Direito do Consumidor</h3>
-            <p>Orientação administrativa e judicial em relações consumeristas.</p>
-          </div>
-          <div className="card">
-            <h3>Direito Previdenciário</h3>
-            <p>Aposentadorias, revisões e benefícios previdenciários.</p>
-          </div>
-          <div className="card">
-            <h3>Direito Civil</h3>
-            <p>Consultoria, prevenção de litígios e atuação judicial.</p>
-          </div>
-          <div className="card">
-            <h3>Responsabilidade Civil</h3>
-            <p>Atuação em demandas indenizatórias e reparação de danos.</p>
-          </div>
-          <div className="card">
-            <h3>Direito Trabalhista</h3>
-            <p>Atuação preventiva e corretiva para empresas e trabalhadores.</p>
-          </div>
-        </div>
+        <div className="about-highlights">
+    <div className="highlight-card">
+      <span>10+</span>
+      <p>Anos de Experiência</p>
+    </div>
+
+    <div className="highlight-card">
+      <span>✓</span>
+      <p>Atendimento Personalizado</p>
+    </div>
+
+    <div className="highlight-card">
+      <span>◈</span>
+      <p>Consultoria Online</p>
+    </div>
+
+    <div className="highlight-card">
+      <span>⚖</span>
+      <p>Excelência Jurídica</p>
+    </div>
+  </div>
       </section>
 
       <section id="equipe" className="section">
-        <h2>Nossa Equipe</h2>
-        <div className="team-grid">
-          <div className="team-card">
-  <div className="team-photo">
-    <img src={luis1} className="photo-main" alt="Luís Lara" />
-    <img src={luis2} className="photo-hover" alt="Luís Lara" />
-  </div>
+  <h2>Nossa Equipe</h2>
 
-  <div className="team-info">
-    <h3>Dr. Luís Lara</h3>
-    <p>Sócio Fundador</p>
-  </div>
-</div>
-<div className="team-card">
-  <div className="team-photo triple">
-    <img src={jami1} className="photo-main" alt="Jamille Klug" />
-    <img src={jami2} className="photo-hover" alt="Jamille Klug" />
-    <img src={jami3} className="photo-hover-second" alt="Jamille Klug" />
-  </div>
+  <div className="team-grid">
 
-  <div className="team-info">
-    <h3>Dra. Jamille Klug</h3>
-    <p>Sócia Fundadora</p>
-  </div>
-</div>
-<div className="team-card">
-  <div className="team-photo triple">
-    <img src={mari1} className="photo-main" alt="Mariluz Costa" />
-    <img src={mari2} className="photo-hover" alt="Mariluz Costa" />
-    <img src={mari3} className="photo-hover-second" alt="Mariluz Costa" />
-  </div>
+    <div className="team-card">
 
-  <div className="team-info">
-    <h3>Dra. Mariluz Costa</h3>
-    <p>Advogada Associada</p>
+      <div className="team-photo">
+        <img src={luis1} className="photo-main" alt="Luís Lara" />
+        <img src={luis2} className="photo-hover" alt="Luís Lara" />
+      </div>
+
+      <div className="team-info">
+        <h3>Dr. Luís Lara</h3>
+        <div className="team-line"></div>
+        <p>Sócio Fundador</p>
+      </div>
+
+    </div>
+
+
+    <div className="team-card">
+
+      <div className="team-photo triple">
+
+        <img src={jami1} className="photo-main" alt="Jamille Klug" />
+        <img src={jami2} className="photo-hover" alt="Jamille Klug" />
+        <img src={jami3} className="photo-hover-second" alt="Jamille Klug" />
+
+      </div>
+
+      <div className="team-info">
+        <h3>Dra. Jamille Klug</h3>
+        <div className="team-line"></div>
+        <p>Sócia Fundadora</p>
+      </div>
+
+    </div>
+
+
+    <div className="team-card">
+
+      <div className="team-photo triple">
+
+        <img src={mari1} className="photo-main" alt="Mariluz Costa" />
+        <img src={mari2} className="photo-hover" alt="Mariluz Costa" />
+        <img src={mari3} className="photo-hover-second" alt="Mariluz Costa" />
+
+      </div>
+
+      <div className="team-info">
+        <h3>Dra. Mariluz Costa</h3>
+        <div className="team-line"></div>
+        <p>Advogada Associada</p>
+      </div>
+
+    </div>
+
   </div>
-</div>
-        </div>
-      </section>
+</section>
+
+      <section id="areas" className="section areas-section">
+  <h2>Áreas de Atuação</h2>
+
+  <p className="areas-subtitle">
+    Soluções jurídicas estratégicas e personalizadas para pessoas físicas e empresas.
+  </p>
+
+  <div className="cards">
+
+    <div className="card">
+      <h3>Assessoria Jurídica à Empresas</h3>
+      <p>
+        Atendimento jurídico completo para empresas, com atuação preventiva e contenciosa.
+      </p>
+    </div>
+
+    <div className="card">
+      <h3>Direito Contratual</h3>
+      <p>
+        Elaboração, revisão e acompanhamento durante toda a negociação de contratos.
+      </p>
+    </div>
+
+    <div className="card">
+      <h3>Direito de Família e Sucessões</h3>
+      <p>
+        Divórcios, guarda, alimentos, inventários e planejamento sucessório.
+      </p>
+    </div>
+
+    <div className="card">
+      <h3>Direito do Consumidor</h3>
+      <p>
+        Orientação administrativa e judicial em relações consumeristas.
+      </p>
+    </div>
+
+    <div className="card">
+      <h3>Direito Previdenciário</h3>
+      <p>
+        Aposentadorias, revisões e benefícios previdenciários.
+      </p>
+    </div>
+
+    <div className="card">
+      <h3>Direito Civil</h3>
+      <p>
+        Consultoria, prevenção de litígios e atuação judicial.
+      </p>
+    </div>
+
+    <div className="card">
+      <h3>Responsabilidade Civil</h3>
+      <p>
+        Atuação em demandas indenizatórias e reparação de danos.
+      </p>
+    </div>
+
+    <div className="card">
+      <h3>Direito Trabalhista</h3>
+      <p>
+        Atuação preventiva e corretiva para empresas e trabalhadores.
+      </p>
+    </div>
+
+  </div>
+</section>
 
       <section id="contato" className="footer-contact">
 
@@ -220,44 +285,43 @@ function App() {
 
       <div className="footer-links">
 
-        <div className="footer-link">
-          <img src={localizaIcon} alt="" />
-          <div>
-            <h4>Endereço</h4>
-            <p>
-              Avenida Protásio Alves, 4629<br />
-              Sala 204 - Chácara das Pedras<br />
-              Porto Alegre/RS
-            </p>
-          </div>
-        </div>
+  <div className="footer-link">
+    <FontAwesomeIcon icon={faMap} />
+    <div>
+      <h4>Endereço</h4>
+      <p>
+        Avenida Protásio Alves, 4629<br />
+        Sala 204 - Chácara das Pedras<br />
+        Porto Alegre/RS
+      </p>
+    </div>
+  </div>
 
-        <div className="footer-link">
-          <img src={whatsappIcon} alt="" />
-          <div>
-            <h4>WhatsApp</h4>
-            <p>(51) 99274-4008</p>
-          </div>
-        </div>
+  <div className="footer-link">
+    <FontAwesomeIcon icon={faWhatsapp} />
+    <div>
+      <h4>WhatsApp</h4>
+      <p>(51) 99274-4008</p>
+    </div>
+  </div>
 
-        <div className="footer-link">
-          <img src={emailIcon} alt="" />
-          <div>
-            <h4>E-mail</h4>
-            <p>klug.lara.adv@gmail.com</p>
-          </div>
-        </div>
+  <div className="footer-link">
+    <FontAwesomeIcon icon={faAt} />
+    <div>
+      <h4>E-mail</h4>
+      <p>klug.lara.adv@gmail.com</p>
+    </div>
+  </div>
 
-        <div className="footer-link">
-          <img src={instagramIcon} alt="" />
-          <div>
-            <h4>Instagram</h4>
-            <p>@advocaciakluglara</p>
-          </div>
-        </div>
+  <div className="footer-link">
+    <FontAwesomeIcon icon={faInstagram} />
+    <div>
+      <h4>Instagram</h4>
+      <p>@advocaciakluglara</p>
+    </div>
+  </div>
 
-      </div>
-
+</div>
     </div>
 
   </div>
@@ -274,7 +338,7 @@ function App() {
   rel="noreferrer"
   className="whatsapp"
 >
-  <FaWhatsapp />
+  <FontAwesomeIcon icon={faWhatsapp} />
   <span>WhatsApp</span>
 </a>
     </>
