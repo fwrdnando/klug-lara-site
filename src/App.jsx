@@ -6,11 +6,15 @@ import localizaIcon from "./assets/localiza.png";
 import { useEffect, useState } from "react";
 import "./App.css";
 import equipe from "./assets/equipe.jpeg";
-import jamille from "./assets/jamille.jpeg";
-import luisSentado from "./assets/luis_sentado.jpeg";
-import luisSerio from "./assets/luis_serio.jpeg";
-import mariPe from "./assets/mari_pe.jpeg";
-import mariSentada from "./assets/mari_sentada.jpeg";
+import escri from "./assets/escri.jpeg";
+import luis1 from "./assets/luis1.jpeg";
+import luis2 from "./assets/luis2.jpeg";
+import jami1 from "./assets/jami1.jpeg";
+import jami2 from "./assets/jami2.jpeg";
+import jami3 from "./assets/jami3.jpeg";
+import mari1 from "./assets/mari1.jpeg";
+import mari2 from "./assets/mari2.jpeg";
+import mari3 from "./assets/mari3.jpeg";
 import logoAzul from "./assets/logo_azul.png";
 import logoCinza from "./assets/logo_cinza.png";
 
@@ -62,7 +66,7 @@ function App() {
         </div>
 
         <div className="hero-image">
-          <img src={equipe} alt="Equipe Klug & Lara" />
+          <img src={escri} alt="Escritório Klug & Lara" />
         </div>
       </header>
 
@@ -157,34 +161,40 @@ function App() {
         <h2>Nossa Equipe</h2>
         <div className="team-grid">
           <div className="team-card">
-            <div className="team-photo">
-              <img src={luisSentado} className="photo-main" alt="Luís Lara" />
-              <img src={luisSerio} className="photo-hover" alt="Luís Lara" />
-            </div>
-            <div className="team-info">
-              <h3>Dr. Luís Lara</h3>
-              <p>Sócio Fundador</p>
-            </div>
-          </div>
-          <div className="team-card">
-            <div className="team-photo single">
-              <img src={jamille} className="photo-main" alt="Jamille Klug" />
-            </div>
-            <div className="team-info">
-              <h3>Dra. Jamille Klug</h3>
-              <p>Sócia Fundadora</p>
-            </div>
-          </div>
-          <div className="team-card">
-            <div className="team-photo">
-              <img src={mariPe} className="photo-main" alt="Mariluz Costa" />
-              <img src={mariSentada} className="photo-hover" alt="Mariluz Costa" />
-            </div>
-            <div className="team-info">
-              <h3>Dra. Mariluz Costa</h3>
-              <p>Advogada Associada</p>
-            </div>
-          </div>
+  <div className="team-photo">
+    <img src={luis1} className="photo-main" alt="Luís Lara" />
+    <img src={luis2} className="photo-hover" alt="Luís Lara" />
+  </div>
+
+  <div className="team-info">
+    <h3>Dr. Luís Lara</h3>
+    <p>Sócio Fundador</p>
+  </div>
+</div>
+<div className="team-card">
+  <div className="team-photo triple">
+    <img src={jami1} className="photo-main" alt="Jamille Klug" />
+    <img src={jami2} className="photo-hover" alt="Jamille Klug" />
+    <img src={jami3} className="photo-hover-second" alt="Jamille Klug" />
+  </div>
+
+  <div className="team-info">
+    <h3>Dra. Jamille Klug</h3>
+    <p>Sócia Fundadora</p>
+  </div>
+</div>
+<div className="team-card">
+  <div className="team-photo triple">
+    <img src={mari1} className="photo-main" alt="Mariluz Costa" />
+    <img src={mari2} className="photo-hover" alt="Mariluz Costa" />
+    <img src={mari3} className="photo-hover-second" alt="Mariluz Costa" />
+  </div>
+
+  <div className="team-info">
+    <h3>Dra. Mariluz Costa</h3>
+    <p>Advogada Associada</p>
+  </div>
+</div>
         </div>
       </section>
 
