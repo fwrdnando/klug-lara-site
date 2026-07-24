@@ -577,6 +577,18 @@ body {
 
 @media (max-width: 900px) {
 
+  .cards {
+  grid-template-columns: 1fr;
+  gap: 18px;
+}
+
+.card {
+  padding: 24px;
+}
+
+.card h3 {
+  font-size: 1.05rem;
+}
   .navbar {
     width: calc(100% - 32px);
     top: 12px;
@@ -587,30 +599,42 @@ body {
     border-radius: 40px;
   }
 
-  .menu {
-    gap: 20px;
-  }
+ .menu {
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
-  .menu a {
-    font-size: 0.82rem;
-  }
+ .menu a {
+  font-size: 0.75rem;
+}
 
   .hero {
-    background:
-      radial-gradient(ellipse 100% 50% at 50% 0%, #0e4a9a 0%, transparent 60%),
-      linear-gradient(180deg, #013d7d 0%, #f7f8fa 55%);
-    color: #1f2937;
-    grid-template-columns: 1fr;
-    padding: 110px 6% 60px;
-    gap: 40px;
-    min-height: auto;
-  }
+  min-height: 100vh;
 
-  .hero p {
-    color: #374151;
-    max-width: 100%;
-  }
+  background-image: url("./assets/escri.jpeg");
+  background-size: cover;
+  background-position: center;
 
+  padding: 120px 8% 80px;
+
+  color: white;
+
+  display: flex;
+  align-items: center;
+}
+
+ .hero p {
+  color: rgba(255,255,255,.92);
+  max-width: 100%;
+  font-size: 1.15rem;
+  line-height: 1.7;
+}
+.btn-primary {
+  margin-top: 30px;
+  padding: 15px 32px;
+  font-size: 1rem;
+}
   .btn-primary {
     color: #013D7D;
     border-color: rgba(1, 61, 125, 0.5);
