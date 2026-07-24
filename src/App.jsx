@@ -5,7 +5,6 @@ import emailIcon from "./assets/email.png";
 import localizaIcon from "./assets/localiza.png";
 import { useEffect, useState } from "react";
 import "./App.css";
-import equipe from "./assets/equipe.jpeg";
 import escri from "./assets/escri.jpeg";
 import luis1 from "./assets/luis1.jpeg";
 import luis2 from "./assets/luis2.jpeg";
