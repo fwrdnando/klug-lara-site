@@ -211,9 +211,9 @@ function App() {
     </div>
 
     <div className="card">
-      <h3>Direito Contratual</h3>
+      <h3>Direito de Trânsito</h3>
       <p>
-        Elaboração, revisão e acompanhamento durante toda a negociação de contratos.
+        Atuamos na defesa dos direitos de motoristas, proprietários de veículos e empresas.
       </p>
     </div>
 
