@@ -689,6 +689,22 @@ body {
   }
 
 }
+.footer-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-map {
+    order: 1;
+}
+
+.footer-info {
+    order: 2;
+}
+
+.footer-map iframe {
+    height: 420px;
+}
 /* ───────── FOOTER ───────── */
 
 .footer-contact {
