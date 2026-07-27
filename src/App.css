@@ -670,7 +670,7 @@ body {
     gap: 35px;
 }
 .footer-map {
-    width: 100%;
+    display: none;
 }
 
 .footer-info {
@@ -719,6 +719,33 @@ body {
 
 .footer-map iframe {
     height: 420px;
+    .footer-map {
+    display: none;
+}
+
+.map-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 20px;
+
+    padding: 14px 24px;
+
+    border-radius: 999px;
+
+    background: white;
+    color: #013D7D;
+
+    text-decoration: none;
+    font-weight: 600;
+
+    transition: .3s;
+}
+
+.map-button:hover {
+    transform: translateY(-2px);
+}
 }
 /* ───────── FOOTER ───────── */
 
@@ -875,4 +902,7 @@ body {
   text-align: center;
 
   color: rgba(255,255,255,.7);
+}
+.map-button {
+  display: none;
 }

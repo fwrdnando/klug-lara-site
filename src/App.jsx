@@ -296,7 +296,14 @@ function App() {
       </p>
     </div>
   </div>
-
+<a
+  href="https://maps.google.com/?q=Avenida+Protásio+Alves+4629,+Porto+Alegre"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="map-button"
+>
+  📍 Abrir no Google Maps
+</a>
   <div className="footer-link">
     <FontAwesomeIcon icon={faWhatsapp} />
     <div>
