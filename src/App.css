@@ -700,8 +700,9 @@ body {
 
   .footer-link {
     justify-content: center;
-    text-align: center;
-  }
+    text-align: left;
+    gap: 16px;
+}
 
 }
 .footer-container {
@@ -745,6 +746,13 @@ body {
 
 .map-button:hover {
     transform: translateY(-2px);
+}
+.footer-main-logo {
+    display: block;
+    margin: 0 auto 24px;
+}
+.footer-info {
+    align-items: center;
 }
 }
 /* ───────── FOOTER ───────── */

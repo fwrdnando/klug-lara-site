@@ -294,6 +294,15 @@ function App() {
         Sala 204 - Chácara das Pedras<br />
         Porto Alegre/RS
       </p>
+     <a
+  href="https://maps.google.com/?cid=11064623521288178071"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="map-button"
+>
+  <FontAwesomeIcon icon={faMap} />
+  <span>Como chegar</span>
+</a>
     </div>
   </div>
 <a
